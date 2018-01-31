@@ -1,3 +1,21 @@
 body{
 	background-color: grey;
 }
+
+.cool{
+	width: 150px;
+	height: 100px;
+	background-color: blue;
+	padding-top: 50px;
+	margin-top: 20px;
+	transition: background-color 2s;
+}
+
+.cool.red{
+	background-color: red;
+}
+
+p{
+	color: white;
+	text-align: center;
+}
