@@ -1,12 +1,13 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
 }
 
 .left{
 	background-color: #d3d3d3;
 	position: fixed;
 	width: 40%;
-	height: 80%;
+	height: 500px;
 	top: 50px;
 	left: 50px;
 	border-style: outset;
@@ -51,7 +52,7 @@ p.rocket-man{
 	width: 150px;
 	height: 200px;
 	background: url(../img/rocket1.png) no-repeat 0 0;
-	transition: bottom 10000ms;
+	transition: bottom 20000ms;
 	margin-left: -75px;
 }
 
@@ -65,7 +66,7 @@ body.body-state2 .rocket{
 
 body.body-state3 .rocket,
 body.body-state4 .rocket{
-	bottom: 1000px;
+	bottom: 2000px;
 	background-image: url(../img/rocket3.png)
 }
 
@@ -88,6 +89,7 @@ body.body-state5 .state5 {display: block;}
 
 a{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
 }
 
 a.button{
@@ -122,5 +124,5 @@ a.abort:hover{
 
 h1{
 	font-family: 'Righteous', cursive;
-	font-size: 48px;
+	font-size: 60px;
 }
