@@ -13,6 +13,8 @@ body{
 	border-style: outset;
 	border-color: grey;
 	border-width: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .interface{
@@ -124,5 +126,5 @@ a.abort:hover{
 
 h1{
 	font-family: 'Righteous', cursive;
-	font-size: 60px;
+	font-size: 50px;
 }
