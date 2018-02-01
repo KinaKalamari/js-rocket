@@ -1,16 +1,35 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
 .left{
-	background-color: cyan;
+	background-color: #d3d3d3;
 	position: fixed;
-	width: 50%;
-	height: 100%;
-	top: 0;
-	left: 0;	
+	width: 40%;
+	height: 80%;
+	top: 50px;
+	left: 50px;
+	border-style: outset;
+	border-color: grey;
+	border-width: 5px;
+}
+
+.interface{
+	text-align: center;
+	padding-top: 50px;
+}
+
+p.rocket-man{
+	position: absolute;
+	bottom: 50px;
+	color: #808080;
+	width:100%;
 }
 
 .right{
-	background-color: darkgrey;
+	background-color: #ace5ee;
 	position: fixed;
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	top: 0;
 	right: 0;
@@ -27,21 +46,31 @@
 
 .rocket{
 	position: absolute;
-	left: 50%;
-	bottom: 20px;
-	width: 20px;
-	height: 100px;
-	background-color: blue;
+	left: 75%;
+	bottom: 0px;
+	width: 150px;
+	height: 200px;
+	background: url(../img/rocket1.png) no-repeat 0 0;
 	transition: bottom 10000ms;
+	margin-left: -75px;
 }
 
 body.body-state1 .rocket{
 	transition: none;
 }
 
+body.body-state2 .rocket{
+	background-image: url(../img/rocket2.png)
+}
+
 body.body-state3 .rocket,
 body.body-state4 .rocket{
 	bottom: 1000px;
+	background-image: url(../img/rocket3.png)
+}
+
+body.body-state5 .rocket{
+	background-image: url(../img/boom.png);
 }
 
 .state1 {display: none;}
@@ -58,9 +87,40 @@ body.body-state5 .state5 {display: block;}
 
 
 a{
-
+	font-family: 'Open Sans', sans-serif;
 }
 
 a.button{
+	display: inline-block;
+	background-color: green;
+	color: white;
+	padding: 20px 40px;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: 100ms;
+	border: outset #006400 3px;
+}
 
+a.button:hover{
+	background-color: #004225
+}
+
+a.abort{
+	display: inline-block;
+	background-color: red;
+	color: white;
+	padding: 20px 40px;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: 100ms;
+	border: outset #8b0000 3px;
+}
+
+a.abort:hover{
+	background-color: #cc0000;
+}
+
+h1{
+	font-family: 'Righteous', cursive;
+	font-size: 48px;
 }

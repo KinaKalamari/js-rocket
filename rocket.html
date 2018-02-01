@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rocket Launch Sequence!</title>
+	<title>Rocket Man</title>
 	<link rel="stylesheet" type="text/css" href="css/rocket.css">
 	<script type="text/javascript" src="js/rocket.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
 </head>
 <body class="body-state1">
 
-	<div class="left">
-		<div class ="state1">
-			<h1>JS Rocket Launch!</h1>
-			<a href="#" class="button"
-			onclick="changeState(2);">
-			Launch!</a>
-		</div>
-		<div class ="state2">
-			<h1 id="countdown">10</h1>
-			<a href="#" class="button"
-			onclick="changeState(1);">
-			Abort!</a>
-		</div>
-		<div class ="state3">
-			<h1>Liftoff!</h1>
-		</div>
-		<div class ="state4">
-			<h1>Well done!</h1>
-			<a href="#" class="button"
-			onclick="changeState(1);">
-			Do it again!</a>
-		</div>
-		<div class ="state5">
-			<h1>Oh no!</h1>
-			<a href="#" class="button"
-			onclick="changeState(1);">
-			Try again!</a>
-		</div>
-	</div>
 	<div class="right">
 	<div class="ground"></div>
 		<div class="rocket"></div>
 	</div>
+
+	<div class="left">
+		<div class ="interface state1">
+			<h1>Rocket Man</h1>
+			<a href="#" class="button"
+			onclick="changeState(2);">
+			Launch!</a>
+			<p class="rocket-man">"I think it's gonna be a long, long time..."</p>
+		</div>
+		<div class ="interface state2">
+			<h1 id="countdown">10</h1>
+			<a href="#" class="abort"
+			onclick="changeState(1);">
+			Abort!</a>
+			<p class="rocket-man">"'Til touchdown brings me 'round again to find..."</p>
+		</div>
+		<div class ="interface state3">
+			<h1>Liftoff!</h1>
+			<p class="rocket-man">"I'm not the man they think I am at home..."</p>
+		</div>
+		<div class ="interface state4">
+			<h1>Well done!</h1>
+			<a href="#" class="button"
+			onclick="changeState(1);">
+			Do it again!</a>
+			<p class="rocket-man">"Burning out my fuse out here alone."</p>
+		</div>
+		<div class ="interface state5">
+			<h1>Oh no!</h1>
+			<a href="#" class="button"
+			onclick="changeState(1);">
+			Try again!</a>
+			<p class="rocket-man">"I'm a rocket man."</p>
+		</div>
+	</div>
+	
 
 
 </body>
